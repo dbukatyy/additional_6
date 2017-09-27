@@ -12,7 +12,7 @@ module.exports = function zeros(expression) {
   let pos = -1,
       count = 0;
     
-  while ((pos = str.indexOf(0, pos + 1)) != -1) {
+  while ((pos = str.indexOf('0', pos + 1)) != -1) {
     count += 1
   }
   
