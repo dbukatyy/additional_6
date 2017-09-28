@@ -32,9 +32,11 @@ module.exports = function zeros(expression) {
       let pos = -1,
       count = 0;
     
-      while ((pos = str.indexOf(item, pos + 1)) != -1) {
-        count += 1
-      }
+      while(str[str.length - pos] === '0') {
+    count += 1;
+    pos += 1;
+  }
+    
   
     return count
   }
